@@ -1,0 +1,68 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Liste des pays'" [icon]="'fa-table'"></app-page-header>	
+
+	
+<!--<div class="row">
+        <div class="col col-xl-12 col-lg-12">
+			<div class="card mb-12">
+			  <div class="card-header">Liste</div>
+				<table class="table table-striped card-body table">
+				  <thead>
+				  <tr class="table-active">
+					<th class="hidden">Id</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Action</th>
+				  </tr>
+				  </thead>
+				  <tbody>
+				  <tr *ngFor="let country of countries">
+					<td class="hidden"></td>
+					<td>{{country.id}}</td>
+					<td>{{country.name}}</td>
+					<td>{{country.name}}</td>
+					<td><button class="btn btn-danger" (click)="deleteCountry(country)">Supprimer Pays</button></td>
+				  </tr>
+				  </tbody>
+				</table>
+			 </div>
+		   </div>
+       </div>-->
+
+		<div class="row">
+			<div class="col col-xl-12 col-lg-12">
+			<div class="card mb-12">
+				<div class="card-header">Liste</div>	
+				<table class="table table-striped card-body table">
+					<thead>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Quantity</th>
+						<th>Date </th>
+					</thead>
+					<tbody>
+						<tr *ngFor="let country of countries">
+							<td>{{country.id}}</td>
+							<td>{{country.name}}</td>
+							<td>{{country.name}}</td>
+							<td>{{country.name}}</td>
+				<!--			<td><button class="btn btn-danger" (click)="deleteItem(user)">Delete</button>
+								<button class="btn btn-primary" (click)="saveOrUpdateItem(user)">Edit</button>  -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<button class="btn btn-primary" (click)="newItem()">New User</button>
+			</div>
+		  </div>
+		</div>
+		<hr>
+		<footer class="container-fluid bg-4 text-center">
+			<p> Copyright Ⓒ Joel Franck ADJIDAN:All Rights Reserved</p> 
+		</footer>
+
+</div>
+
+
+
